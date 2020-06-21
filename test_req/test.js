@@ -3,14 +3,19 @@ const db = require("../database/dbConfig.js");
 
 router.post("/new", (req, res) => {
   const body = req.body;
-  db("test")
-    .insert(body, "id")
-    .then((e) => {
-      res.json({ id: e, body });
-    })
-    .catch((err) => {
-      res.json({ message: "not valid" });
-    });
+
+  if (body) {
+    db("test")
+      .insert(body, "id")
+      .then((e) => {
+        res.json({ id: e, body });
+      })
+      .catch((err) => {
+        res.json({ message: "not valid" });
+      });
+  } else {
+    res.json("error");
+  }
 });
 
 router.get("/names", (req, res) => {
@@ -25,13 +30,13 @@ router.get("/names", (req, res) => {
 });
 
 router.put("/put/:id", (req, res) => {
-  const age = req.body.age;
+  const body = req.body;
   const { id } = req.params;
   db("test")
     .update(req.body)
     .where("id", id)
     .then((e) => {
-      res.json({ data: e, age });
+      res.json({ data: e, body });
     })
     .catch((err) => {
       res.json({ message: "try again" });
