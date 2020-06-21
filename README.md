@@ -1,6 +1,6 @@
 # Backend
 
-Backend Endpoints
+Backend EndpointS
 
 ### This is a temporary schema, will build out tables once my planning is finalized.
 
