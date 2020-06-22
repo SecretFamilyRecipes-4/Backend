@@ -2,9 +2,10 @@
 
 ## Register / Login Endpoints
 
-| Request | URL | Description |
-| POST | /api/users/register | register a new users |
-| POST | /api/users/login | login with the new user |
+| Request | URL                 | Description             |
+| ------- | ------------------- | ----------------------- |
+| POST    | /api/users/register | register a new users    |
+| POST    | /api/users/login    | login with the new user |
 
 POST
 
