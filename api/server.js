@@ -19,7 +19,12 @@ server.use("/api/recipe", recipeRouter);
 // server.use("/", test);
 
 server.get("/", (req, res) => {
-  res.status(201).json({ api: "Lets Add Some Secret Recipes" });
+  res.status(201).json({
+    environment: process.env.NODE_ENV,
+    port: process.env.PORT,
+    greeting: process.env.GREETING,
+    hey: process.env.HEY,
+  });
 });
 
 module.exports = server;
