@@ -5,15 +5,15 @@
 | Request | URL                 | Description             | Required Fields            |
 | ------- | ------------------- | ----------------------- | -------------------------- |
 | POST    | /api/users/register | register a new users    | _"username"_, _"password"_ |
-| POST    | /api/users/login    | login with the new user |                            |
+| POST    | /api/users/login    | login with the new user | _"username"_, _"password"_ |
 
 ## Create / Edit Recipe
 
-| Request | URL             | Description                         |
-| ------- | --------------- | ----------------------------------- |
-| POST    | /api/recipe/new | adds a new recipe to the database   |
-| PUT     | /api/recipe/id  | edit recipe already in database     |
-| DELETE  | /api/recipe/id  | delete the recipe from the database |
+| Request | URL             | Description                         | Required Fields                                                        |
+| ------- | --------------- | ----------------------------------- | ---------------------------------------------------------------------- |
+| POST    | /api/recipe/new | adds a new recipe to the database   | _"title"_, _"source"_, _"ingredients"_, _"instructions"_, _"category"_ |
+| PUT     | /api/recipe/id  | edit recipe already in database     |                                                                        |
+| DELETE  | /api/recipe/id  | delete the recipe from the database |                                                                        |
 
 ## GETs
 
@@ -23,15 +23,6 @@
 | GET     | /api/users/id   | gets one user individually and only their recipes |
 | GET     | /api/recipes    | gets all of the recipes that have been created    |
 | GET     | /api/recipes/id | gets recipe by its id                             |
-
-# Requirements
-
-## Users
-
-| Request Type | Requirements                          |
-| ------------ | ------------------------------------- |
-| Register     | needs a **username** and **password** |
-| Login        | needs a **username** and **password** |
 
 POST
 
