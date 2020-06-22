@@ -15,15 +15,10 @@ server.use(express.json());
 server.use("/api/auth", authRouter);
 server.use("/api/users", userRouter);
 server.use("/api/recipe", recipeRouter);
-// server.use("/", test);
+// server.use("/", test);```
 
 server.get("/", (req, res) => {
-  res.status(201).json({
-    environment: process.env.NODE_ENV,
-    port: process.env.PORT,
-    greeting: process.env.GREETING,
-    hey: process.env.HEY,
-  });
+  res.status(201).json({ api: "Lets add some secret recipes!" });
 });
 
 module.exports = server;
