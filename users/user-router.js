@@ -18,6 +18,7 @@ router.get("/", (req, res) => {
 //GETs username by id and recipe info
 router.get("/:id", (req, res) => {
   const { id } = req.params;
+
   db.findBy(id)
     .then((user) => {
       res.status(201).json({ data: user });

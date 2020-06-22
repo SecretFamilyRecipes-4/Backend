@@ -7,7 +7,7 @@ module.exports = {
 
 function find() {
   return db("users as u")
-    .join("recipes as r", "r.id", "u.id")
+    .join("recipes as r", "r.userId", "u.id")
     .select(
       "u.id",
       "u.username",
@@ -22,7 +22,7 @@ function find() {
 
 function findBy(id) {
   return db("users as u")
-    .join("recipes as r")
+    .join("recipes as r", "r.userId", "u.id")
     .select(
       "u.id",
       "u.username",
@@ -32,6 +32,5 @@ function findBy(id) {
       "r.instructions",
       "r.category"
     )
-    .where("u.id", id)
-    .first();
+    .where("u.id", id);
 }

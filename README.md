@@ -13,10 +13,10 @@
 | username | string | yes      | yes    | users username |
 | password | string | yes      | no     | users password |
 
-| Request | URL                 | Description             | Required Fields            | Unique       |
-| ------- | ------------------- | ----------------------- | -------------------------- | ------------ |
-| POST    | /api/users/register | register a new user     | _"username"_, _"password"_ | _"username"_ |
-| POST    | /api/users/login    | login with the new user | _"username"_, _"password"_ | na           |
+| Request | URL                 | Description             | Required Fields            |
+| ------- | ------------------- | ----------------------- | -------------------------- |
+| POST    | /api/users/register | register a new user     | _"username"_, _"password"_ |
+| POST    | /api/users/login    | login with the new user | _"username"_, _"password"_ |
 
 ## Create / Edit Recipe
 
@@ -34,4 +34,44 @@
 | GET     | /api/users/id   | gets one user individually and only their recipes |
 | GET     | /api/recipe/all | gets all of the recipes that have been created    |
 | GET     | /api/recipe/id  | gets recipe by its id                             |
-| GET     | /api/users/all  | gets all users and recipes                        |
+
+# Examples of using the API:
+
+### Registering a new user
+
+#### POST to /api/users/register
+
+{
+"username": "cody",
+"password": "password"
+}
+
+### Login with newly created user
+
+#### POST to /api/users/login
+
+{
+"username": "cody",
+"password": "password"
+}
+
+### Posting a new recipe
+
+#### POST to /api/recipe/new
+
+{
+"title": "new recipe",
+"source": "back of the box",
+"ingredients": "salt and pepper",
+"instructions": "follow 1 through 3",
+"category": "soul food"
+}
+
+### Editing a already created recipe
+
+#### POST to /api/recipe/id
+
+{
+"source": "grocery store",
+"category": "fresh greens"
+}

@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
 router.post("/register", (req, res) => {
   db.add(req.body)
     .then((data) => {
-      res.status(201).json({ data });
+      res.status(201).json({ id: data, ...req.body });
     })
     .catch((err) => {
       res.status(401).json({ err });

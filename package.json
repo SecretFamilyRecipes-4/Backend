@@ -4,7 +4,6 @@
   "description": "Backend API for Secret Recipe Project",
   "main": "index.js",
   "scripts": {
-    "test": "na",
     "server": "nodemon index.js",
     "start": "node index.js"
   },
