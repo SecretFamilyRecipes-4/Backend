@@ -39,7 +39,7 @@
 
 ### Registering a new user
 
-#### POST to /api/users/register
+POST to /api/users/register
 
 {
 "username": "cody",
@@ -48,7 +48,7 @@
 
 ### Login with newly created user
 
-#### POST to /api/users/login
+POST to /api/users/login
 
 {
 "username": "cody",
@@ -57,7 +57,7 @@
 
 ### Posting a new recipe
 
-#### POST to /api/recipe/new
+POST to /api/recipe/new
 
 {
 "title": "new recipe",
@@ -67,9 +67,8 @@
 "category": "soul food"
 }
 
-### Editing a already created recipe
-
-#### POST to /api/recipe/id
+Editing a already created recipe
+POST to /api/recipe/id
 
 {
 "source": "grocery store",
