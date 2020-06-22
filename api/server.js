@@ -2,7 +2,6 @@ const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
 
-const test = require("../test_req/test.js");
 const authRouter = require("../auth/auth-router.js");
 const userRouter = require("../users/user-router.js");
 const recipeRouter = require("../recipes/recipe-router.js");
