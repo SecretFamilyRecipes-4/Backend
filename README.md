@@ -35,9 +35,9 @@
 | GET     | /api/recipe/all | gets all of the recipes that have been created    |
 | GET     | /api/recipe/id  | gets recipe by its id                             |
 
-    # Examples of using the API:
+# Examples of using the API:
 
-    ### Registering a new user
+### Registering a new user
 
     POST to /api/users/register
 
@@ -46,7 +46,7 @@
     "password": "password"
     }
 
-    ### Login with newly created user
+### Login with newly created user
 
     POST to /api/users/login
 
@@ -55,7 +55,7 @@
     "password": "password"
     }
 
-    ### Posting a new recipe
+### Posting a new recipe
 
     POST to /api/recipe/new
 
@@ -67,7 +67,7 @@
     "category": "soul food"
     }
 
-    ### Editing a already created recipe
+### Editing a already created recipe
 
     POST to /api/recipe/id
 
