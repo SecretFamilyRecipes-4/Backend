@@ -21,7 +21,7 @@ function findBy(id) {
 }
 
 function update(recipe) {
-  return db("recipes").update(recipe);
+  return db("recipes").update(recipe).where("id");
 }
 
 function remove(id) {

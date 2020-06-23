@@ -16,7 +16,6 @@ server.use(express.json());
 server.use("/api/auth", authRouter);
 server.use("/api/users", authenticate, userRouter);
 server.use("/api/recipe", authenticate, recipeRouter);
-// server.use("/", test);```
 
 server.get("/", (req, res) => {
   res.status(201).json({ api: "Lets add some secret recipes!" });
