@@ -75,7 +75,7 @@
 
 ### Editing a already created recipe
 
-    POST to /api/recipe/id
+    PUT to /api/recipe/id
 
     {
     "source": "grocery store",
