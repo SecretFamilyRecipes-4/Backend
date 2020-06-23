@@ -20,8 +20,8 @@ function findBy(id) {
   return db("recipes").where({ id }).first();
 }
 
-function update(recipe) {
-  return db("recipes").update(recipe).where("id");
+function update(recipe, id) {
+  return db("recipes").where({ id }).update(recipe);
 }
 
 function remove(id) {

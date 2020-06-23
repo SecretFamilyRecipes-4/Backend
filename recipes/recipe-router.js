@@ -39,17 +39,23 @@ router.get("/:id", (req, res) => {
 });
 
 //PUT recipe by id
+
 router.put("/:id", (req, res) => {
-  const { id } = req.params;
-  const body = req.body;
-  db.update(body)
+  const id = req.params.id;
+  const updates = req.body;
+
+  db.findBy(id)
     .then((change) => {
-      res.status(200).json({ data: change, body });
+      if (change) {
+        db.update(updates, id).then((update) => {
+          res.status(201).json(update);
+        });
+      } else {
+        res.status(404).json({ message: "Unable to find recipe" });
+      }
     })
-    .catch((err) => {
-      res
-        .status(400)
-        .json({ message: "not a valid change, please try again", err });
+    .catch((error) => {
+      res.status(500).json({ message: error });
     });
 });
 
