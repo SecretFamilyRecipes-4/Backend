@@ -8,7 +8,7 @@
 
 - [ ] Register a new user.
 - [ ] Login with those credentials.
-- [ ] Use the token you get back from logging as an authorization header in order to sign in and access the data.
+- [ ] Use the token you get back from logging in, as an authorization header in order to sign in and access the data.
 
 ## Register / Login Endpoints
 
