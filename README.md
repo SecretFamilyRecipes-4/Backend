@@ -6,9 +6,9 @@
 
 #### You must be authenticated first before accessing the data. I have examples below on how to complete authentication.
 
-[] Register a new user.
-[] Login with those credentials.
-[] Use the token you get back from logging as an authorization header in order to sign in and access the data.
+- [ ] Register a new user.
+- [ ] Login with those credentials.
+- [ ] Use the token you get back from logging as an authorization header in order to sign in and access the data.
 
 ## Register / Login Endpoints
 
