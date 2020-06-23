@@ -4,7 +4,7 @@ module.exports = {
   add,
   find,
   findBy,
-  // findById,
+  login,
 };
 
 function find() {
@@ -17,4 +17,11 @@ function findBy(filter) {
 
 function add(user) {
   return db("users").insert(user, "id");
+}
+
+function login(username) {
+  return db("users as u")
+    .select("u.id", "u.username", "u.password")
+    .where({ username: username })
+    .orderBy("id");
 }

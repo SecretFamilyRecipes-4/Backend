@@ -16,7 +16,7 @@ router.post("/new", (req, res) => {
 });
 
 //GETS all recipes
-router.get("/all", (req, res) => {
+router.get("/", (req, res) => {
   db.find()
     .then((data) => {
       res.status(201).json(data);

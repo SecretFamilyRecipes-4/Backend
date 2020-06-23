@@ -28,12 +28,12 @@
 
 ## GETs
 
-| Request | URL             | Description                                       |
-| ------- | --------------- | ------------------------------------------------- |
-| GET     | /api/users      | gets all the created users and their recipes      |
-| GET     | /api/users/id   | gets one user individually and only their recipes |
-| GET     | /api/recipe/all | gets all of the recipes that have been created    |
-| GET     | /api/recipe/id  | gets recipe by its id                             |
+| Request | URL            | Description                                       |
+| ------- | -------------- | ------------------------------------------------- |
+| GET     | /api/users     | gets all the created users and their recipes      |
+| GET     | /api/users/id  | gets one user individually and only their recipes |
+| GET     | /api/recipe    | gets all of the recipes that have been created    |
+| GET     | /api/recipe/id | gets recipe by its id                             |
 
 # Examples of using the API:
 
