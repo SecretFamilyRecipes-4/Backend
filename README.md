@@ -35,43 +35,43 @@
 | GET     | /api/recipe/all | gets all of the recipes that have been created    |
 | GET     | /api/recipe/id  | gets recipe by its id                             |
 
-# Examples of using the API:
+              # Examples of using the API:
 
-### Registering a new user
+              ### Registering a new user
 
-POST to /api/users/register
+              POST to /api/users/register
 
-{
-"username": "cody",
-"password": "password"
-}
+              {
+              "username": "cody",
+              "password": "password"
+              }
 
-### Login with newly created user
+              ### Login with newly created user
 
-POST to /api/users/login
+              POST to /api/users/login
 
-{
-"username": "cody",
-"password": "password"
-}
+              {
+              "username": "cody",
+              "password": "password"
+              }
 
-### Posting a new recipe
+              ### Posting a new recipe
 
-POST to /api/recipe/new
+              POST to /api/recipe/new
 
-{
-"title": "new recipe",
-"source": "back of the box",
-"ingredients": "salt and pepper",
-"instructions": "follow 1 through 3",
-"category": "soul food"
-}
+              {
+              "title": "new recipe",
+              "source": "back of the box",
+              "ingredients": "salt and pepper",
+              "instructions": "follow 1 through 3",
+              "category": "soul food"
+              }
 
-### Editing a already created recipe
+              ### Editing a already created recipe
 
-POST to /api/recipe/id
+              POST to /api/recipe/id
 
-{
-"source": "grocery store",
-"category": "fresh greens"
-}
+              {
+              "source": "grocery store",
+              "category": "fresh greens"
+              }
