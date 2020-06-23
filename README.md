@@ -66,7 +66,6 @@ POST to /api/recipe/new
 "instructions": "follow 1 through 3",
 "category": "soul food"
 }
-[
 
 ### Editing a already created recipe
 
@@ -76,4 +75,3 @@ POST to /api/recipe/id
 "source": "grocery store",
 "category": "fresh greens"
 }
-]
