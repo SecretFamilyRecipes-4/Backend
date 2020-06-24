@@ -19,10 +19,10 @@
 | username | string | yes      | yes    | users username |
 | password | string | yes      | no     | users password |
 
-| Request | URL                 | Description             | Required Fields            |
-| ------- | ------------------- | ----------------------- | -------------------------- |
-| POST    | /api/users/register | register a new user     | _"username"_, _"password"_ |
-| POST    | /api/users/login    | login with the new user | _"username"_, _"password"_ |
+| Request | URL                | Description             | Required Fields            |
+| ------- | ------------------ | ----------------------- | -------------------------- |
+| POST    | /api/auth/register | register a new user     | _"username"_, _"password"_ |
+| POST    | /api/auth/login    | login with the new user | _"username"_, _"password"_ |
 
 ## Create / Edit Recipe
 
