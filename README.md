@@ -45,7 +45,7 @@
 
 ### Registering a new user
 
-    POST to /api/users/register
+    POST to /api/auth/register
 
     {
     "username": "cody",
@@ -54,7 +54,7 @@
 
 ### Login with newly created user
 
-    POST to /api/users/login
+    POST to /api/auth/login
 
     {
     "username": "cody",
