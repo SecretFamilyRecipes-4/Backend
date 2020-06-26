@@ -48,7 +48,7 @@ router.put("/:id", (req, res) => {
     .then((change) => {
       if (change) {
         db.update(updates, id).then((update) => {
-          res.status(201).json(update);
+          res.status(201).json({ userId: update, updates });
         });
       } else {
         res.status(404).json({ message: "Unable to find recipe" });
